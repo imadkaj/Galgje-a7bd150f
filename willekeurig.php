@@ -8,7 +8,7 @@
   <body>
 <h1>Je hebt gekozen voor een willekeurig woord</h1>
 <?php
-    $woorden = array('Imad', 'ROCAmsterdam' , "Thijs" , "Dehaas28" , "Sinterklaas", "Kerstvakantie", "Bob", "Thomas" );
+    $woorden = array('imad', 'rocamsterdam' , "thijs" , "dehaas" , "sinterklaas", "kerstvakantie", "bob", "thomas" );
     $rand_keys = array_rand($woorden);
     setcookie('woord' , $woorden[$rand_keys] , time() + (86400 * 10) );
     echo $woorden[$rand_keys];
